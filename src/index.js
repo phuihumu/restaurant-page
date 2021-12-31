@@ -29,6 +29,7 @@ function pageLoad() {
     element.appendChild(header);
 }
 pageLoad();
+
 //homePage();
 //menuPage();
 contactPage();
