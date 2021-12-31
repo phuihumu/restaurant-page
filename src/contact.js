@@ -29,6 +29,7 @@ function contactPage() {
     takodachiList.appendChild(takodachiEmail);
     const takodachiImage = new Image();
     takodachiImage.src = takodachiI;
+    takodachiImage.classList.add('contactImg');
 
     takodachi.appendChild(takodachiHeader);
     takodachi.appendChild(takodachiList);
