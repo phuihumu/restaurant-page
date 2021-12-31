@@ -1,5 +1,6 @@
 import homePage from './home';
 import menuPage from './menu';
+import contactPage from './contact';
 import './style.css';
 
 function pageLoad() {
@@ -9,6 +10,7 @@ function pageLoad() {
     const tabs = document.createElement('div');
     tabs.classList.add('tabs');
     const list = document.createElement('ul');
+    list.classList.add("headerList");
     const homeTab = document.createElement('li');
     const menuTab = document.createElement('li');
     const contactTab = document.createElement('li');
@@ -28,4 +30,5 @@ function pageLoad() {
 }
 pageLoad();
 //homePage();
-menuPage();
+//menuPage();
+contactPage();

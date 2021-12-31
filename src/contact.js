@@ -1,11 +1,11 @@
 import './style.css';
-import takodachiI from 'takodachi.jpeg';
+import takodachiI from './takodachi.jpeg';
 
 function contactPage() {
     const element = document.querySelector('#content');
 
     const contact = document.createElement('div');
-    contact.classList('contact');
+    contact.classList.add('contact');
 
     const contactTitle = document.createElement('div');
     contactTitle.classList.add('contactItem');
@@ -19,10 +19,13 @@ function contactPage() {
     takodachiHeader.innerHTML = "Takodachis";
     const takodachiList = document.createElement('ul');
     const takodachiTitle = document.createElement('li');
+    takodachiTitle.classList.add('contactList');
     takodachiTitle.innerHTML = "The Whole Team";
     const takodachiPhone = document.createElement('li');
+    takodachiPhone.classList.add('contactList');
     takodachiPhone.innerHTML = "000-000-0000";
     const takodachiEmail = document.createElement('li');
+    takodachiEmail.classList.add('contactList');
     takodachiEmail.innerHTML = "fromTheVoid@fake.com";
     takodachiList.appendChild(takodachiTitle);
     takodachiList.appendChild(takodachiPhone);

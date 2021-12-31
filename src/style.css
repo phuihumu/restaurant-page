@@ -19,8 +19,12 @@ body {
 
 ul {
     list-style-type: none;
-    display: flex;
     gap: 100px;
+    color: white;
+}
+
+.headerList {
+    display: flex;
 }
 
 img {
@@ -100,4 +104,8 @@ img {
 .menuImg, .contactImg {
     width: 300px;
     height:auto;
+}
+
+.contactList {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
