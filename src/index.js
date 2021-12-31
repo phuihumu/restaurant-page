@@ -1,6 +1,7 @@
 import homePage from './home';
 import menuPage from './menu';
 import contactPage from './contact';
+import clearPage from './clearPage';
 import './style.css';
 
 function pageLoad() {
