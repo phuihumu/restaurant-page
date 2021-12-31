@@ -1,4 +1,5 @@
 import homePage from './home';
+import menuPage from './menu';
 import './style.css';
 
 function pageLoad() {
@@ -26,4 +27,5 @@ function pageLoad() {
     element.appendChild(header);
 }
 pageLoad();
-homePage();
+//homePage();
+menuPage();
