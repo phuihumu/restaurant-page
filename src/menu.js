@@ -12,6 +12,7 @@ function menuPage() {
     const menuTitle = document.createElement('div');
     menuTitle.classList.add('menuTitle');
     menuTitle.innerHTML = "Menu";
+    menuTitle.classList.add('menuItem');
 
     const takoTacos = document.createElement('div');
     takoTacos.classList.add('menuItem');
@@ -61,6 +62,7 @@ function menuPage() {
     cookies.appendChild(cookieText);
     cookies.appendChild(cookieImage);
 
+    menu.appendChild(menuTitle);
     menu.appendChild(takoTacos);
     menu.appendChild(takoyaki);
     menu.appendChild(cookies);
