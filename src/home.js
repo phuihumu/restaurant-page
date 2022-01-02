@@ -4,6 +4,9 @@ import './style.css';
 function homePage() {
     const element = document.querySelector('#content');
 
+    const homeContainer = document.createElement('div');
+    homeContainer.classList.add('home');
+
     const middle = document.createElement('div');
     middle.classList.add('middle');
     const banner = new Image();
@@ -14,11 +17,13 @@ function homePage() {
     middle.appendChild(banner);
     middle.appendChild(desc);
 
+    homeContainer.appendChild(middle);
+
     const footer = document.createElement('div');
     footer.classList.add('footer');
     footer.innerHTML= 'Copyright Information';
 
-    element.appendChild(middle);
+    element.appendChild(homeContainer);
     element.appendChild(footer);
 
     return element;
