@@ -27,8 +27,6 @@ function pageLoad() {
     tabs.appendChild(list);
     header.appendChild(tabs);
 
-    //element.appendChild(header);
-    //document.body.appendChild(header);
     document.body.insertBefore(header, document.body.firstChild);
 }
 pageLoad();
