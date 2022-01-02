@@ -27,10 +27,28 @@ function pageLoad() {
     tabs.appendChild(list);
     header.appendChild(tabs);
 
-    element.appendChild(header);
+    //element.appendChild(header);
+    //document.body.appendChild(header);
+    document.body.insertBefore(header, document.body.firstChild);
 }
 pageLoad();
+homePage();
 
-//homePage();
-//menuPage();
-contactPage();
+const home = document.querySelector('#home');
+const menu = document.querySelector('#menu');
+const contact = document.querySelector('#contact');
+
+home.addEventListener("click", () => {
+    clearPage();
+    homePage();
+});
+
+menu.addEventListener("click", () => {
+    clearPage();
+    menuPage();
+});
+
+contact.addEventListener("click", () => {
+    clearPage();
+    contactPage();
+});
